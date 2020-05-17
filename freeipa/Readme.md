@@ -2,7 +2,8 @@
 #### Задачи:
 ```
 1) Балансировка трафика на 80/443/tcp порт для доступа к доступному GUI интерфейсу.
-2) Балансировка трафика на порты 636/tcp/udp (LDAPS), 389/tcp/tcp/udp (LDAP), 88/tcp/udp (Kerberos), 464/tcp/udp (Kerberos), 123/tcp/udp (NTP) 
+2) Балансировка трафика на порты 636/tcp/udp (LDAPS), 389/tcp/tcp/udp (LDAP), 88/tcp/udp (Kerberos),
+ 464/tcp/udp (Kerberos), 123/tcp/udp (NTP) 
 ```
 
 #### Реализация: 
@@ -99,7 +100,7 @@ stream {
         proxy_responses 2;
         error_log /var/log/nginx/<service>.log;
     }
-
+}
 ```
 
 # Если есть ошибки или замечания готов выслушать и если, что поправить конфигурацию.
